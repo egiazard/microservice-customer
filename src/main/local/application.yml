@@ -1,14 +1,17 @@
 spring:
+
+  data:
+    mongodb:
+      uri: mongodb+srv://tiger1342:P1HNVoUbPn9zSDiu@cluster0.lsc2s3n.mongodb.net
+      database: customer
+
   application:
     name: microservice-customer
+
 
   devtools:
     restart:
       enabled: true
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017
-      database: customer
 
 server:
   port: 8080

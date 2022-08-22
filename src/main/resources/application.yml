@@ -1,11 +1,12 @@
 spring:
-  application:
-    name: microservice-customer
 
   data:
     mongodb:
-      uri: mongodb+srv://mkmongouser:Secret_Password@cluster0.yu4x6.mongodb.net
+      uri: mongodb+srv://tiger1342:P1HNVoUbPn9zSDiu@cluster0.lsc2s3n.mongodb.net
       database: customer
+
+  application:
+    name: microservice-customer
 
 server:
   port: 8080
@@ -18,8 +19,8 @@ management:
       exposure:
         include: health, prometheus, info, metrics
 
-    health:
-      show-details: always
+  health:
+    show-details: always
 
   metrics:
     tags:
